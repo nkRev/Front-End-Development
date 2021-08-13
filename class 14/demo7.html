@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        div{
+            border-radius: 200px;
+            
+        }
+        body{
+            background-color: #ccc;
+            font-family: 'Roboto', sans-serif;
+        }
+        ul{
+            list-style: none;
+            
+            width: 500px;
+            margin: auto;
+            margin-top: 2rem; /*32px top margin*/
+          
+
+        }
+        li{
+            display: inline-block;
+        }
+
+        a{
+            font-size: 20px;
+            color: #FFA372;
+            text-align: center;
+            text-decoration: none;
+            animation-duration: 1s;
+            animation-name: slidein;
+           
+
+        }
+        a:hover{
+            background-color: 43658B;
+            font-size: 60px;
+        }
+
+        @keyframes slidein{
+            from{
+                margin-left: 800%;
+                width: 200%;
+            }
+            to{
+                margin: auto;
+                width: 100%;
+            }
+        }
+
+        a:active{
+            text-decoration: line-through;
+        }
+        /* the css class container fluid comes from bootstrap 4
+           it allows a container to span the width of the viewport*/
+
+
+
+        .diy-nav-bar{
+            background-color: #4E89AE;
+        }
+
+        .container-fluid{
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid diy-nav-bar">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <p style="align-content: center;">
+            Lorem Ipsum Generator
+            
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</body>
+</html>
