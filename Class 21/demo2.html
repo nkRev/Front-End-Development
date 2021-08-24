@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mytext">
+        insert heading here
+    </h1>
+
+    <p>
+        <input type="text" id="t1" placeholder="Colar name">
+    </p>
+
+    <button onclick="onButtonClick()">
+        add style
+    </button>
+
+    <script>
+        function onButtonClick(){
+            var color = document.getElementById('t1').value;
+            document.getElementById('mytext').style.fontSize = '13rem'
+            document.getElementById('mytext').style.color = color;
+        }
+        
+    </script>
+</body>
+</html>
